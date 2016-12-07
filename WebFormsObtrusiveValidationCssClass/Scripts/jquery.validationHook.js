@@ -6,7 +6,7 @@
         className: 'validationError'
     };
 
-    if (typeof (ValidationSummaryOnSubmit != 'undefined')) {
+    if (typeof(ValidationSummaryOnSubmit) === "function") {
         var originalValidationSummaryOnSubmit = ValidationSummaryOnSubmit;
 
         ValidationSummaryOnSubmit = function (validationGroup) {
