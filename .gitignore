@@ -250,3 +250,6 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+
+/WebFormsObtrusiveValidationCssClass/Scripts/jquery.validationHook.js
+/WebFormsObtrusiveValidationCssClass/Scripts/*.js.map
