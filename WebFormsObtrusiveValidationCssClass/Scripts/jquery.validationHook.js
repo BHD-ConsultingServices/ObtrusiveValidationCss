@@ -37,7 +37,7 @@
                 }
             }
 
-            originalValidationSummaryOnSubmit(validationGroup);
+            return originalValidationSummaryOnSubmit(validationGroup);
         }
     }
 }(jQuery));
