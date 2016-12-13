@@ -30,12 +30,15 @@
                     <asp:ScriptReference Path="~/Scripts/jquery.validationHook.js" />
                 </Scripts>
             </asp:ScriptManager>
-
+            
             <asp:TextBox runat="server" ID="Group1" ValidationGroup="Group1" />
             <asp:RequiredFieldValidator runat="server" ControlToValidate="Group1" ValidationGroup="Group1" ErrorMessage="* Group1 RFV" Display="Dynamic" />
             <asp:CustomValidator runat="server" ControlToValidate="Group1" ValidateEmptyText="True" ValidationGroup="Group1" ErrorMessage="* Group1 AlwaysFail" Display="Dynamic" ClientValidationFunction="AlwaysFail" />
             <%-- Always pass after failure (ensure we are not using last validator state --%>
             <asp:CustomValidator runat="server" ControlToValidate="Group1" ValidateEmptyText="True" ValidationGroup="Group1" ErrorMessage="* Group1 AlwaysPass" Display="Dynamic" ClientValidationFunction="AlwaysPass" />
+            <br />
+            <asp:TextBox runat="server" ID="Group1DynamicUpdate" ValidationGroup="Group1" />
+            <asp:RequiredFieldValidator runat="server" ControlToValidate="Group1DynamicUpdate" ValidationGroup="Group1" ErrorMessage="* Group1 RFV" Display="Dynamic" />
 
             <br />
 
@@ -52,7 +55,7 @@
             <br />
 
             <asp:TextBox runat="server" ID="None" ValidationGroup="None" />
-
+            
             <br />
             <br />
 

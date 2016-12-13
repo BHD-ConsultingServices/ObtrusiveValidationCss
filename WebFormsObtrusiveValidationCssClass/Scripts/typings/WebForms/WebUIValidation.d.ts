@@ -1,4 +1,12 @@
-﻿interface ValidationElement extends HTMLElement {
+﻿interface ValidatorTarget extends HTMLElement {
+    htmlFor: string;
+
+    tagName: string;
+
+    Validators: Validator[];
+}
+
+interface Validator extends HTMLElement {
 
     controltovalidate: string;
 
@@ -10,7 +18,7 @@
 }
 
 interface IIsValidationGroupMatch {
-    (control: ValidationElement, validationGroup: string): boolean;
+    (control: Validator, validationGroup: string): boolean;
 }
 
 interface IValidationSummaryOnSubmit {
@@ -22,7 +30,9 @@ interface WebUIValidation extends Window {
 
     Page_IsValid: boolean;
 
-    Page_Validators: ValidationElement[];
+    Page_Validators: Validator[];
 
     ValidationSummaryOnSubmit: IValidationSummaryOnSubmit;
+
+    ValidatorOnChange: EventListener;
 }

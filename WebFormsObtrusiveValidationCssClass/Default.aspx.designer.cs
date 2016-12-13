@@ -31,6 +31,15 @@ namespace WebFormsObtrusiveValidationCssClass {
         protected global::System.Web.UI.WebControls.TextBox Group1;
         
         /// <summary>
+        /// Group1DynamicUpdate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Group1DynamicUpdate;
+        
+        /// <summary>
         /// Group2 control.
         /// </summary>
         /// <remarks>
